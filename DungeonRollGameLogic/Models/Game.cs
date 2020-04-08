@@ -56,9 +56,9 @@ namespace DungeonRollGameLogic.Models
             return filterListFaction(Faction.Player);
         }
 
-        public List<Dice> getEnemyDice()
+        public List<Dice> getDungeonDice()
         {
-            return filterListFaction(Faction.Enemy);
+            return filterListFaction(Faction.Dungeon);
         }
 
         private List<Dice> filterListFaction(Faction faction)

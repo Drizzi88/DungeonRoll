@@ -1,48 +1,411 @@
 [
 	{
+		"Name" : "Warrior",
+		"DiceType" : "Warrior",
+		"Faction" : 0,
+		"DiceKind" : 1,
+		"StrongAgainst" : [
+			{
+				"Name" : "Goblin",
+				"DiceType" : null,
+				"Faction" : 0,
+				"DiceKind" : 0,
+				"StrongAgainst" : [],
+				"WeakAgainst" : [],
+				"ImagePath" : null
+			}
+		],
+		"ImagePath" : "warrior",
+		"WeakAgainst" : []
+	},
+	{
+		"Name" : "Cleric",
+		"DiceType" : "Cleric",
+		"Faction" : 0,
+		"DiceKind" : 1,
+		"StrongAgainst" : [
+			{
+				"Name" : "Skeleton",
+				"DiceType" : null,
+				"Faction" : 0,
+				"DiceKind" : 0,
+				"StrongAgainst" : [],
+				"WeakAgainst" : [],
+				"ImagePath" : null
+			}
+		],
+		"WeakAgainst" : [],
+		"ImagePath" : "Cleric"
+	},
+	{
 		"Name" : "Wizard",
-		"Type" : "Wizard",
+		"DiceType" : "Wizard",
+		"Faction" : 0,
+		"DiceKind" : 1,
 		"StrongAgainst" : [
 			{
 				"Name" : "Slime",
-				"Type" : null,
+				"DiceType" : null,
+				"Faction" : 0,
+				"DiceKind" : 0,
 				"StrongAgainst" : [],
 				"WeakAgainst" : [],
 				"ImagePath" : null
 			}
 		],
-		"WeakAgainst" : [
-			{
-				"Name" : "Dice A",
-				"Type" : null,
-				"StrongAgainst" : [],
-				"WeakAgainst" : [],
-				"ImagePath" : null
-			}
-		],
+		"WeakAgainst" : [],
 		"ImagePath" : "C:/a.img"
 	},
 	{
-		"Name" : "Fighter",
-		"Type" : "Fighter",
+		"Name" : "Rogue",
+		"DiceType" : "Rogue",
+		"Faction" : 0,
+		"DiceKind" : 1,
+		"StrongAgainst" : [
+			{
+				"Name" : "treasure",
+				"DiceType" : null,
+				"Faction" : 0,
+				"DiceKind" : 0,
+				"StrongAgainst" : [],
+				"WeakAgainst" : [],
+				"ImagePath" : null
+			}
+		],
+		"ImagePath" : "Rogue",
+		"WeakAgainst" : []
+	},
+	{
+		"Name" : "Champion",
+		"DiceType" : "Champion",
+		"Faction" : 0,
+		"DiceKind" : 1,
 		"StrongAgainst" : [
 			{
 				"Name" : "Slime",
-				"Type" : null,
+				"DiceType" : null,
+				"Faction" : 0,
+				"DiceKind" : 0,
+				"StrongAgainst" : [],
+				"WeakAgainst" : [],
+				"ImagePath" : null
+			},
+			{
+				"Name" : "Goblin",
+				"DiceType" : null,
+				"Faction" : 0,
+				"DiceKind" : 0,
+				"StrongAgainst" : [],
+				"WeakAgainst" : [],
+				"ImagePath" : null
+			},
+			{
+				"Name" : "Skeleton",
+				"DiceType" : null,
+				"Faction" : 0,
+				"DiceKind" : 0,
+				"StrongAgainst" : [],
+				"WeakAgainst" : [],
+				"ImagePath" : null
+			},
+			{
+				"Name" : "treasure",
+				"DiceType" : null,
+				"Faction" : 0,
+				"DiceKind" : 0,
 				"StrongAgainst" : [],
 				"WeakAgainst" : [],
 				"ImagePath" : null
 			}
 		],
+		"WeakAgainst" : [],
+		"ImagePath" : "Champion"
+	},
+	{
+		"Name" : "Scroll",
+		"DiceType" : "Scroll",
+		"Faction" : 0,
+		"DiceKind" : 1,
+		"StrongAgainst" : [],
+		"WeakAgainst" : [],
+		"ImagePath" : "Scroll"
+	},
+	{
+		"Name" : "Goblin",
+		"DiceType" : "Goblin",
+		"Faction" : 1,
+		"DiceKind" : 0,
+		"StrongAgainst" : [],
+		"ImagePath" : "Goblin",
 		"WeakAgainst" : [
 			{
-				"Name" : "Dice A",
-				"Type" : null,
+				"Name" : "Warrior",
+				"DiceType" : "Warrior",
+				"Faction" : 0,
+				"DiceKind" : 1,
 				"StrongAgainst" : [],
 				"WeakAgainst" : [],
 				"ImagePath" : null
+			},
+			{
+				"Name" : "Champion",
+				"DiceType" : "Champion",
+				"Faction" : 0,
+				"DiceKind" : 1,
+				"StrongAgainst" : [
+					{
+						"Name" : "Slime",
+						"DiceType" : null,
+						"Faction" : 0,
+						"DiceKind" : 0,
+						"StrongAgainst" : [],
+						"WeakAgainst" : [],
+						"ImagePath" : null
+					},
+					{
+						"Name" : "Goblin",
+						"DiceType" : null,
+						"Faction" : 0,
+						"DiceKind" : 0,
+						"StrongAgainst" : [],
+						"WeakAgainst" : [],
+						"ImagePath" : null
+					},
+					{
+						"Name" : "Skeleton",
+						"DiceType" : null,
+						"Faction" : 0,
+						"DiceKind" : 0,
+						"StrongAgainst" : [],
+						"WeakAgainst" : [],
+						"ImagePath" : null
+					},
+					{
+						"Name" : "treasure",
+						"DiceType" : null,
+						"Faction" : 0,
+						"DiceKind" : 0,
+						"StrongAgainst" : [],
+						"WeakAgainst" : [],
+						"ImagePath" : null
+					}
+				],
+				"WeakAgainst" : [],
+				"ImagePath" : "Champion"
 			}
-		],
-		"ImagePath" : "C:/a.img"
+		]
+	},
+	{
+		"Name" : "Skeleton",
+		"DiceType" : "Skeleton",
+		"Faction" : 1,
+		"DiceKind" : 0,
+		"StrongAgainst" : [],
+		"ImagePath" : "Goblin",
+		"WeakAgainst" : [
+			{
+				"Name" : "Cleric",
+				"DiceType" : "Cleric",
+				"Faction" : 0,
+				"DiceKind" : 1,
+				"StrongAgainst" : [],
+				"WeakAgainst" : [],
+				"ImagePath" : null
+			},
+			{
+				"Name" : "Champion",
+				"DiceType" : "Champion",
+				"Faction" : 0,
+				"DiceKind" : 1,
+				"StrongAgainst" : [
+					{
+						"Name" : "Slime",
+						"DiceType" : null,
+						"Faction" : 0,
+						"DiceKind" : 0,
+						"StrongAgainst" : [],
+						"WeakAgainst" : [],
+						"ImagePath" : null
+					},
+					{
+						"Name" : "Goblin",
+						"DiceType" : null,
+						"Faction" : 0,
+						"DiceKind" : 0,
+						"StrongAgainst" : [],
+						"WeakAgainst" : [],
+						"ImagePath" : null
+					},
+					{
+						"Name" : "Skeleton",
+						"DiceType" : null,
+						"Faction" : 0,
+						"DiceKind" : 0,
+						"StrongAgainst" : [],
+						"WeakAgainst" : [],
+						"ImagePath" : null
+					},
+					{
+						"Name" : "treasure",
+						"DiceType" : null,
+						"Faction" : 0,
+						"DiceKind" : 0,
+						"StrongAgainst" : [],
+						"WeakAgainst" : [],
+						"ImagePath" : null
+					}
+				],
+				"WeakAgainst" : [],
+				"ImagePath" : "Champion"
+			}
+		]
+	},
+	{
+		"Name" : "Slime",
+		"DiceType" : "Slime",
+		"Faction" : 1,
+		"DiceKind" : 0,
+		"StrongAgainst" : [],
+		"ImagePath" : "Goblin",
+		"WeakAgainst" : [
+			{
+				"Name" : "Wizard",
+				"DiceType" : "Wizard",
+				"Faction" : 0,
+				"DiceKind" : 1,
+				"StrongAgainst" : [],
+				"WeakAgainst" : [],
+				"ImagePath" : null
+			},
+			{
+				"Name" : "Champion",
+				"DiceType" : "Champion",
+				"Faction" : 0,
+				"DiceKind" : 1,
+				"StrongAgainst" : [
+					{
+						"Name" : "Slime",
+						"DiceType" : null,
+						"Faction" : 0,
+						"DiceKind" : 0,
+						"StrongAgainst" : [],
+						"WeakAgainst" : [],
+						"ImagePath" : null
+					},
+					{
+						"Name" : "Goblin",
+						"DiceType" : null,
+						"Faction" : 0,
+						"DiceKind" : 0,
+						"StrongAgainst" : [],
+						"WeakAgainst" : [],
+						"ImagePath" : null
+					},
+					{
+						"Name" : "Skeleton",
+						"DiceType" : null,
+						"Faction" : 0,
+						"DiceKind" : 0,
+						"StrongAgainst" : [],
+						"WeakAgainst" : [],
+						"ImagePath" : null
+					},
+					{
+						"Name" : "treasure",
+						"DiceType" : null,
+						"Faction" : 0,
+						"DiceKind" : 0,
+						"StrongAgainst" : [],
+						"WeakAgainst" : [],
+						"ImagePath" : null
+					}
+				],
+				"WeakAgainst" : [],
+				"ImagePath" : "Champion"
+			}
+		]
+	},
+	{
+		"Name" : "treasure",
+		"DiceType" : "treasure",
+		"Faction" : 1,
+		"DiceKind" : 0,
+		"StrongAgainst" : [],
+		"ImagePath" : "Goblin",
+		"WeakAgainst" : [
+			{
+				"Name" : "Rogue",
+				"DiceType" : "Rogue",
+				"Faction" : 0,
+				"DiceKind" : 1,
+				"StrongAgainst" : [],
+				"WeakAgainst" : [],
+				"ImagePath" : null
+			},
+			{
+				"Name" : "Champion",
+				"DiceType" : "Champion",
+				"Faction" : 0,
+				"DiceKind" : 1,
+				"StrongAgainst" : [
+					{
+						"Name" : "Slime",
+						"DiceType" : null,
+						"Faction" : 0,
+						"DiceKind" : 0,
+						"StrongAgainst" : [],
+						"WeakAgainst" : [],
+						"ImagePath" : null
+					},
+					{
+						"Name" : "Goblin",
+						"DiceType" : null,
+						"Faction" : 0,
+						"DiceKind" : 0,
+						"StrongAgainst" : [],
+						"WeakAgainst" : [],
+						"ImagePath" : null
+					},
+					{
+						"Name" : "Skeleton",
+						"DiceType" : null,
+						"Faction" : 0,
+						"DiceKind" : 0,
+						"StrongAgainst" : [],
+						"WeakAgainst" : [],
+						"ImagePath" : null
+					},
+					{
+						"Name" : "treasure",
+						"DiceType" : null,
+						"Faction" : 0,
+						"DiceKind" : 0,
+						"StrongAgainst" : [],
+						"WeakAgainst" : [],
+						"ImagePath" : null
+					}
+				],
+				"WeakAgainst" : [],
+				"ImagePath" : "Champion"
+			}
+		]
+	},
+	{
+		"Name" : "Potion",
+		"DiceType" : "Potion",
+		"Faction" : 1,
+		"DiceKind" : 3,
+		"StrongAgainst" : [],
+		"ImagePath" : "Goblin",
+		"WeakAgainst" : []
+	},
+	{
+		"Name" : "Dragon",
+		"DiceType" : "Dragon",
+		"Faction" : 1,
+		"DiceKind" : 4,
+		"StrongAgainst" : [],
+		"ImagePath" : "Dragon",
+		"WeakAgainst" : []
 	}
 ]

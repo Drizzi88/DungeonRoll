@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Text;
 
 namespace DungeonRollGameLogic.Models
@@ -9,6 +10,8 @@ namespace DungeonRollGameLogic.Models
     {
         public int DragonDiceCount { get; set; } = 0;
         public List<Player> Players { get; set; }
+        public List<Dice> DiceList { get; set; } = new List<Dice>();
+        public List<Hero> HeroList { get; set; } = new List<Hero>();
 
         public int setDragonDiceCount(int diceCount)
         {
@@ -30,16 +33,22 @@ namespace DungeonRollGameLogic.Models
 
         public void initializeGame()
         {
+            fillHeroes();
+            fillDice();
         }
 
         private void addPlayer(string name, Hero chosenHero)
         {
         }
 
-        public List<Hero> getAvailableHeroes()
+        public void fillDice()
         {
-            List<Hero> HeroList = new List<Hero>();
-            return HeroList;
+            DiceList = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Dice>>(File.ReadAllText("Json/Dices.json", Encoding.UTF8));
+        }
+
+        public void fillHeroes()
+        {
+            HeroList = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Hero>>(File.ReadAllText("Json/Heroes.json", Encoding.UTF8));
         }
     }
 

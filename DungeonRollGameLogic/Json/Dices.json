@@ -1,0 +1,48 @@
+[
+	{
+		"Name" : "Wizard",
+		"Type" : "Wizard",
+		"StrongAgainst" : [
+			{
+				"Name" : "Slime",
+				"Type" : null,
+				"StrongAgainst" : [],
+				"WeakAgainst" : [],
+				"ImagePath" : null
+			}
+		],
+		"WeakAgainst" : [
+			{
+				"Name" : "Dice A",
+				"Type" : null,
+				"StrongAgainst" : [],
+				"WeakAgainst" : [],
+				"ImagePath" : null
+			}
+		],
+		"ImagePath" : "C:/a.img"
+	},
+	{
+		"Name" : "Fighter",
+		"Type" : "Fighter",
+		"StrongAgainst" : [
+			{
+				"Name" : "Slime",
+				"Type" : null,
+				"StrongAgainst" : [],
+				"WeakAgainst" : [],
+				"ImagePath" : null
+			}
+		],
+		"WeakAgainst" : [
+			{
+				"Name" : "Dice A",
+				"Type" : null,
+				"StrongAgainst" : [],
+				"WeakAgainst" : [],
+				"ImagePath" : null
+			}
+		],
+		"ImagePath" : "C:/a.img"
+	}
+]

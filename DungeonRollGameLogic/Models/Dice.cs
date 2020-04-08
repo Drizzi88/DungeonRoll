@@ -24,7 +24,7 @@ namespace DungeonRollGameLogic.Models
             dice.WeakAgainst.Add(new Dice("Dice A"));
             dice.ImagePath = "C:/a.img";
             dices.Add(dice);
-            File.WriteAllText("Dice.json", JsonConvert.SerializeObject(dices));
+            File.WriteAllText("Dice.json", JsonConvert.SerializeObject(dices), Encoding.UTF8);
         }
 
         public Dice()

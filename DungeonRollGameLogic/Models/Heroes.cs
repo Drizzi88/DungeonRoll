@@ -19,10 +19,6 @@ namespace DungeonRollGameLogic.Models
         public SpecialAttack Attack { get; set; }
     }
 
-    public class SpecialEffect
-    {
-    }
-
     public class SpecialAttack
     {
     }

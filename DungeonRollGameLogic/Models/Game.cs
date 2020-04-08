@@ -50,6 +50,31 @@ namespace DungeonRollGameLogic.Models
         {
             HeroList = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Hero>>(File.ReadAllText("Json/Heroes.json", Encoding.UTF8));
         }
+
+        public List<Dice> getPlayerDice()
+        {
+            return filterListFaction(Faction.Player);
+        }
+
+        public List<Dice> getEnemyDice()
+        {
+            return filterListFaction(Faction.Enemy);
+        }
+
+        private List<Dice> filterListFaction(Faction faction)
+        {
+            List<Dice> list = new List<Dice>();
+            if (DiceList.Count <= 0)
+            {
+                fillDice();
+            }
+            foreach (Dice dice in DiceList)
+            {
+                if (dice.Faction == faction)
+                    list.Add(dice);
+            }
+            return list;
+        }
     }
 
     internal class gameIntern

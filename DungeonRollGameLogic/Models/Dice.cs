@@ -6,10 +6,19 @@ using Newtonsoft.Json;
 
 namespace DungeonRollGameLogic.Models
 {
+    public enum Faction
+    {
+        Player,
+        Enemy
+    }
+
     public class Dice
     {
         public string Name { get; set; }
-        public string Type { get; set; }
+        public string DiceType { get; set; }
+
+        public Faction Faction { get; set; }
+
         public List<Dice> StrongAgainst { get; set; } = new List<Dice>();
         public List<Dice> WeakAgainst { get; set; } = new List<Dice>();
         public string ImagePath { get; set; }
@@ -19,7 +28,7 @@ namespace DungeonRollGameLogic.Models
             List<Dice> dices = new List<Dice>();
             Dice dice = new Dice();
             dice.Name = "Wizard";
-            dice.Type = "Wizard";
+            dice.DiceType = "Wizard";
             dice.StrongAgainst.Add(new Dice("Slime"));
             dice.WeakAgainst.Add(new Dice("Dice A"));
             dice.ImagePath = "C:/a.img";
